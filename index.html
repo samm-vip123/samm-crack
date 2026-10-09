@@ -6,49 +6,220 @@
 <title>SAMM CRACK</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
-body{background:radial-gradient(circle at 50% 0%,#7a0000 0%,#3a0000 30%,#150000 60%,#000 100%);display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px;overflow:hidden}
-body:before{content:"";position:fixed;inset:0;background:linear-gradient(#ff003315 1px,transparent 1px) 0 0/50px 50px,linear-gradient(90deg,#ff003315 1px,transparent 1px) 0 0/50px 50px;animation:grid 5s linear infinite;pointer-events:none}
+body{
+  background:radial-gradient(circle at 50% 0%,#7a0000 0%,#3a0000 30%,#150000 60%,#000 100%);
+  display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px;overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;
+  background:
+    linear-gradient(#ff003315 1px,transparent 1px) 0 0/50px 50px,
+    linear-gradient(90deg,#ff003315 1px,transparent 1px) 0 0/50px 50px;
+  animation:grid 5s linear infinite;pointer-events:none;z-index:0;
+}
 @keyframes grid{to{background-position:50px 50px}}
-.box{width:440px;max-width:100%;padding:38px 34px;position:relative;z-index:2;background:linear-gradient(160deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.03) 25%,transparent 50%),linear-gradient(160deg,#5a0000 0%,#2a0000 40%,#1a0000 70%,#3a0000 100%);border-radius:26px;box-shadow:0 0 0 2px #ff0033,0 0 35px #ff0033,0 0 80px #ff0033aa,inset 0 2px 25px rgba(255,255,255,0.25),inset 0 0 70px #ff003340;animation:pulse 2s ease-in-out infinite;overflow:hidden}
-.box:before{content:"";position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent);transform:skewX(-20deg);animation:shine 4s ease-in-out infinite;pointer-events:none}
+
+.box{
+  width:450px;max-width:100%;padding:38px 34px;position:relative;z-index:2;
+  background:
+    linear-gradient(160deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.03) 25%,transparent 50%),
+    linear-gradient(160deg,#5a0000 0%,#2a0000 40%,#1a0000 70%,#3a0000 100%);
+  border-radius:26px;
+  box-shadow:
+    0 0 0 2px #ff0033,
+    0 0 35px #ff0033,0 0 80px #ff0033aa,0 0 160px #ff003360,
+    inset 0 2px 25px rgba(255,255,255,0.25),
+    inset 0 -25px 50px rgba(255,0,50,0.3),
+    inset 0 0 70px #ff003340;
+  animation:pulse 2s ease-in-out infinite;
+  overflow:hidden;
+}
+.box:before{
+  content:"";position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent);
+  transform:skewX(-20deg);animation:shine 4s ease-in-out infinite;
+  pointer-events:none;z-index:5;
+}
 @keyframes shine{0%{left:-100%}50%,100%{left:150%}}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 2px #ff0033,0 0 35px #ff0033,0 0 80px #ff0033aa,inset 0 2px 25px rgba(255,255,255,0.25),inset 0 0 70px #ff003340}50%{box-shadow:0 0 0 2px #ff3366,0 0 50px #ff0033,0 0 110px #ff0033cc,inset 0 2px 30px rgba(255,255,255,0.35),inset 0 0 90px #ff003360}}
-h2{color:#fff;text-align:center;letter-spacing:10px;font-size:32px;font-weight:900;margin-bottom:6px;background:linear-gradient(180deg,#ffffff 0%,#ff3366 50%,#ff0033 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 14px #ff0033);animation:glow 1.2s ease-in-out infinite alternate}
-@keyframes glow{from{filter:drop-shadow(0 0 14px #ff0033)}to{filter:drop-shadow(0 0 25px #ff0033)}}
-.sub{color:#ff5566;text-align:center;font-size:11px;letter-spacing:7px;margin-bottom:22px;font-weight:700}
-.divider{height:2px;margin:20px 0;background:linear-gradient(90deg,transparent,#ff6688,#ff0033,#ff6688,transparent);box-shadow:0 0 14px #ff0033}
-.key-wrap input{width:100%;padding:18px 20px;font-size:15px;letter-spacing:2px;background:linear-gradient(180deg,#0a0000,#250000);border:2px solid #ff003366;border-radius:14px;color:#ff3366;text-align:center;font-weight:700;outline:none;transition:.3s;text-transform:uppercase;box-shadow:inset 0 3px 10px rgba(0,0,0,0.8)}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 2px #ff0033,0 0 35px #ff0033,0 0 80px #ff0033aa,0 0 160px #ff003360,inset 0 2px 25px rgba(255,255,255,0.25),inset 0 0 70px #ff003340}
+  50%{box-shadow:0 0 0 2px #ff3366,0 0 50px #ff0033,0 0 110px #ff0033cc,0 0 200px #ff003380,inset 0 2px 30px rgba(255,255,255,0.35),inset 0 0 90px #ff003360}
+}
+
+.logo{
+  width:130px;height:130px;margin:0 auto 14px;
+  border-radius:24px;overflow:hidden;position:relative;
+  border:2px solid #ff3366;
+  box-shadow:
+    0 0 20px #ff0033,0 0 45px #ff0033aa,0 0 80px #ff003360,
+    inset 0 0 20px #ff003340;
+  animation:logoPulse 2s ease-in-out infinite;
+}
+@keyframes logoPulse{
+  0%,100%{box-shadow:0 0 20px #ff0033,0 0 45px #ff0033aa,0 0 80px #ff003360,inset 0 0 20px #ff003340}
+  50%{box-shadow:0 0 30px #ff3366,0 0 60px #ff0033cc,0 0 100px #ff003380,inset 0 0 25px #ff003360}
+}
+.logo img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  cursor:pointer;transition:.4s;
+}
+.logo img:hover{transform:scale(1.1)}
+.logo:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(160deg,rgba(255,255,255,0.3) 0%,transparent 40%,transparent 60%,rgba(255,0,50,0.2) 100%);
+}
+
+h2{
+  color:#fff;text-align:center;letter-spacing:10px;font-size:28px;
+  font-weight:900;margin-bottom:6px;
+  background:linear-gradient(180deg,#ffffff 0%,#ff3366 50%,#ff0033 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 0 14px #ff0033) drop-shadow(0 0 28px #ff0033);
+  animation:glow 1.2s ease-in-out infinite alternate;
+}
+@keyframes glow{
+  from{filter:drop-shadow(0 0 14px #ff0033) drop-shadow(0 0 28px #ff0033)}
+  to{filter:drop-shadow(0 0 22px #ff0033) drop-shadow(0 0 50px #ff0033)}
+}
+.sub{color:#ff5566;text-align:center;font-size:11px;letter-spacing:7px;margin-bottom:22px;font-weight:700;text-shadow:0 0 10px #ff003388}
+.divider{
+  height:2px;margin:20px 0;
+  background:linear-gradient(90deg,transparent,#ff6688,#ff0033,#ff6688,transparent);
+  box-shadow:0 0 14px #ff0033;border-radius:2px;
+}
+
+.key-wrap input{
+  width:100%;padding:18px 20px;font-size:15px;letter-spacing:2px;
+  background:linear-gradient(180deg,#0a0000,#250000);
+  border:2px solid #ff003366;border-radius:14px;
+  color:#ff3366;text-align:center;font-weight:700;outline:none;
+  transition:.3s;text-transform:uppercase;
+  box-shadow:inset 0 3px 10px rgba(0,0,0,0.8);
+}
 .key-wrap input::placeholder{color:#ff003366;letter-spacing:4px;font-size:14px}
-.key-wrap input:focus{border-color:#ff3366;box-shadow:0 0 25px #ff0033,inset 0 0 22px #ff003344;color:#fff;text-shadow:0 0 12px #ff0033}
-.btn{width:100%;padding:18px;font-size:16px;font-weight:900;letter-spacing:6px;color:#fff;border:2px solid #ff8899;border-radius:14px;cursor:pointer;background:linear-gradient(180deg,rgba(255,255,255,0.5) 0%,transparent 45%),linear-gradient(180deg,#ff3366 0%,#ff0033 50%,#990020 100%);box-shadow:0 0 28px #ff0033,inset 0 2px 14px rgba(255,255,255,0.6);transition:.25s;margin-top:16px;text-shadow:0 0 12px rgba(255,255,255,0.8)}
-.btn:hover{transform:translateY(-2px);box-shadow:0 0 40px #ff0033}
+.key-wrap input:focus{
+  border-color:#ff3366;
+  box-shadow:0 0 25px #ff0033,0 0 50px #ff003388,inset 0 0 22px #ff003344;
+  color:#fff;text-shadow:0 0 12px #ff0033;
+}
+
+.btn{
+  width:100%;padding:18px;font-size:16px;font-weight:900;letter-spacing:6px;
+  color:#fff;border:2px solid #ff8899;border-radius:14px;cursor:pointer;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,0.5) 0%,transparent 45%),
+    linear-gradient(180deg,#ff3366 0%,#ff0033 50%,#990020 100%);
+  box-shadow:0 0 28px #ff0033,0 0 55px #ff003388,inset 0 2px 14px rgba(255,255,255,0.6);
+  transition:.25s;margin-top:16px;
+  text-shadow:0 0 12px rgba(255,255,255,0.8);
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 40px #ff0033,0 0 80px #ff0033}
 .btn:active{transform:translateY(1px) scale(0.99)}
-#msg{text-align:center;font-size:13px;letter-spacing:3px;font-weight:800;margin-top:14px;height:18px}
+
+#msg{text-align:center;font-size:13px;letter-spacing:3px;font-weight:800;margin-top:14px;min-height:18px;line-height:1.4}
 #msg.err{color:#ff0033;text-shadow:0 0 14px #ff0033;animation:shake .4s}
 #msg.ok{color:#00ff88;text-shadow:0 0 14px #00ff88}
+#msg.warn{color:#ffaa00;text-shadow:0 0 14px #ffaa00}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
 .contact{text-align:center;margin-top:20px;font-size:12px;letter-spacing:3px;color:#ff5566;font-weight:800}
-.contact a{display:inline-block;margin-top:12px;padding:14px 34px;color:#00e0ff;text-decoration:none;font-weight:900;letter-spacing:5px;font-size:14px;border:2px solid #00e0ff;border-radius:12px;background:linear-gradient(180deg,rgba(0,224,255,0.3),rgba(0,180,220,0.1));box-shadow:0 0 18px #00e0ff88;transition:.3s;cursor:pointer;text-shadow:0 0 10px #00e0ff}
+.contact a{
+  display:inline-block;margin-top:12px;padding:14px 34px;
+  color:#00e0ff;text-decoration:none;font-weight:900;letter-spacing:5px;font-size:14px;
+  border:2px solid #00e0ff;border-radius:12px;
+  background:linear-gradient(180deg,rgba(0,224,255,0.3),rgba(0,180,220,0.1));
+  box-shadow:0 0 18px #00e0ff88;transition:.3s;cursor:pointer;
+  text-shadow:0 0 10px #00e0ff;
+}
 .contact a:hover{background:#00e0ff;color:#001a22;transform:scale(1.06);text-shadow:none}
+
 #menu{display:none}
 #menu.show{display:block;animation:fadeIn .5s}
 @keyframes fadeIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
-.r{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;margin-bottom:12px;cursor:pointer;user-select:none;background:linear-gradient(180deg,rgba(255,255,255,0.15) 0%,transparent 40%),linear-gradient(180deg,#2a0000,#1a0000);border:1px solid #ff003366;border-radius:14px;color:#ff8888;font-size:15px;font-weight:800;letter-spacing:2px;transition:.3s;position:relative;overflow:hidden}
-.r:before{content:"";position:absolute;left:-100%;top:0;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);transition:.6s}
+
+.r{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:15px 18px;margin-bottom:10px;cursor:pointer;user-select:none;
+  background:linear-gradient(180deg,rgba(255,255,255,0.15) 0%,transparent 40%),linear-gradient(180deg,#2a0000,#1a0000);
+  border:1px solid #ff003366;border-radius:14px;
+  color:#ff8888;font-size:14px;font-weight:800;letter-spacing:1.5px;
+  transition:.3s;position:relative;overflow:hidden;
+}
+.r:before{
+  content:"";position:absolute;left:-100%;top:0;width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);
+  transition:.6s;
+}
 .r:hover:before{left:100%}
 .r:hover{border-color:#ff3366;box-shadow:0 0 20px #ff003388}
-.r.on{color:#fff;border-color:#ff3366;background:linear-gradient(180deg,rgba(255,255,255,0.35),transparent),linear-gradient(180deg,#ff0033,#7a0018);text-shadow:0 0 14px #fff;box-shadow:0 0 28px #ff0033}
-.dot{width:13px;height:13px;border-radius:50%;background:#ff003344;border:1px solid #ff003366;margin-right:12px;transition:.3s;flex-shrink:0}
+.r.on{
+  color:#fff;border-color:#ff3366;
+  background:linear-gradient(180deg,rgba(255,255,255,0.35),transparent),linear-gradient(180deg,#ff0033,#7a0018);
+  text-shadow:0 0 14px #fff;
+  box-shadow:0 0 28px #ff0033;
+}
+.dot{width:12px;height:12px;border-radius:50%;background:#ff003344;border:1px solid #ff003366;margin-right:11px;transition:.3s;flex-shrink:0}
 .r.on .dot{background:#00ff88;box-shadow:0 0 14px #00ff88;border-color:#fff}
 .r span{flex:1}
-.badge{font-size:11px;padding:5px 11px;border-radius:12px;background:#ff003322;border:1px solid #ff003355;color:#ff0033aa;letter-spacing:1.5px;transition:.3s;font-weight:900}
+.badge{
+  font-size:10px;padding:4px 10px;border-radius:12px;
+  background:#ff003322;border:1px solid #ff003355;color:#ff0033aa;
+  letter-spacing:1.5px;transition:.3s;font-weight:900;
+}
 .r.on .badge{background:linear-gradient(180deg,#fff,#ff0033);border-color:#fff;color:#fff;box-shadow:0 0 18px #ff0033}
+
+#config{
+  display:none;margin-top:18px;padding:18px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.12),transparent),linear-gradient(180deg,#1f0000,#0a0000);
+  border:2px solid #ff3366;border-radius:16px;
+  box-shadow:0 0 25px #ff0033,inset 0 0 20px #ff003340;
+  animation:fadeIn .4s;
+}
+#config.show{display:block}
+#config h3{
+  color:#ff5566;font-size:11px;letter-spacing:5px;text-align:center;
+  margin-bottom:14px;font-weight:900;text-shadow:0 0 10px #ff003388;
+}
+.cfg-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:9px 13px;margin-bottom:7px;
+  background:linear-gradient(90deg,#250000,#1a0000);
+  border:1px solid #ff003333;border-radius:10px;
+  font-size:11.5px;letter-spacing:1.5px;color:#ff8888;
+  transition:.3s;
+}
+.cfg-row:hover{border-color:#ff3366;box-shadow:0 0 10px #ff003355}
+.cfg-row .name{font-weight:800;flex:1;color:#ff5566}
+.cfg-row .val{
+  font-weight:900;color:#fff;font-family:monospace;letter-spacing:1px;
+  text-shadow:0 0 8px #ff0033;padding:3px 9px;
+  background:#0a0000;border:1px solid #ff003355;border-radius:6px;
+  font-size:11px;
+}
+.cfg-row .val.hot{color:#00ff88;text-shadow:0 0 10px #00ff88;border-color:#00ff8866}
+.cfg-row .val.warn{color:#ffaa00;text-shadow:0 0 10px #ffaa00;border-color:#ffaa0066}
+
+/* Nút đăng xuất */
+.logout{
+  width:100%;padding:12px;margin-top:14px;
+  color:#ff5566;background:transparent;border:2px solid #ff5566;
+  border-radius:10px;cursor:pointer;font-size:12px;font-weight:900;
+  letter-spacing:4px;transition:.3s;
+}
+.logout:hover{background:#ff5566;color:#fff;box-shadow:0 0 25px #ff5566}
 </style>
 </head>
 <body>
 <div class="box">
 
   <div id="login">
+    <div class="logo">
+      <img src="https://samm-vip123.github.io/samm-crack/logo.png"
+           onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231a0000%22/><text x=%2250%22 y=%2260%22 font-size=%2218%22 fill=%22%23ff0033%22 text-anchor=%22middle%22 font-weight=%22bold%22>SAMM</text></svg>'"
+           alt="SAMM.NET">
+    </div>
+
     <h2>SAMM CRACK</h2>
     <p class="sub">KEY ACTIVATION</p>
     <div class="divider"></div>
@@ -69,15 +240,40 @@ h2{color:#fff;text-align:center;letter-spacing:10px;font-size:32px;font-weight:9
   </div>
 
   <div id="menu">
+    <div class="logo">
+      <img src="https://samm-vip123.github.io/samm-crack/logo.png"
+           onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%231a0000%22/><text x=%2250%22 y=%2260%22 font-size=%2218%22 fill=%22%23ff0033%22 text-anchor=%22middle%22 font-weight=%22bold%22>SAMM</text></svg>'"
+           alt="SAMM.NET">
+    </div>
+
     <h2>SAMM CRACK</h2>
     <p class="sub">MENU CHỨC NĂNG</p>
     <div class="divider"></div>
-    <div class="r"><div class="dot"></div><span>MENU SAMM CRACK</span><div class="badge">OFF</div></div>
-    <div class="r"><div class="dot"></div><span>AIM BOT</span><div class="badge">OFF</div></div>
-    <div class="r"><div class="dot"></div><span>AIM NECK</span><div class="badge">OFF</div></div>
-    <div class="r"><div class="dot"></div><span>AIM LOCK</span><div class="badge">OFF</div></div>
-    <div class="r"><div class="dot"></div><span>ESP</span><div class="badge">OFF</div></div>
+
+    <div class="r" data-n="MENU SAMM CRACK"><div class="dot"></div><span>MENU SAMM CRACK</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM BOT"><div class="dot"></div><span>AIM BOT</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM NECK"><div class="dot"></div><span>AIM NECK</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM LOCK"><div class="dot"></div><span>AIM LOCK</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM BODY"><div class="dot"></div><span>AIM BODY</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM MAGIC"><div class="dot"></div><span>AIM MAGIC</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM DRAG"><div class="dot"></div><span>AIM DRAG</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="AIM CỔ"><div class="dot"></div><span>AIM CỔ</span><div class="badge">OFF</div></div>
+    <div class="r" data-n="ESP"><div class="dot"></div><span>ESP</span><div class="badge">OFF</div></div>
+
     <div class="divider"></div>
+
+    <div id="config">
+      <h3 id="cfgTitle">CẤU HÌNH</h3>
+      <div class="cfg-row"><span class="name">ĐỘ NHẠY</span><span class="val hot" id="v1">100%</span></div>
+      <div class="cfg-row"><span class="name">VÙNG AIM</span><span class="val" id="v2">180°</span></div>
+      <div class="cfg-row"><span class="name">KHOẢNG CÁCH</span><span class="val" id="v3">300M</span></div>
+      <div class="cfg-row"><span class="name">TỐC ĐỘ</span><span class="val warn" id="v4">FAST</span></div>
+      <div class="cfg-row"><span class="name">XUYÊN TƯỜNG</span><span class="val hot" id="v5">BẬT</span></div>
+      <div class="cfg-row"><span class="name">ANTI-BAN</span><span class="val hot" id="v6">BẬT</span></div>
+    </div>
+
+    <button class="logout" onclick="logout()">ĐĂNG XUẤT</button>
+
   </div>
 
 </div>
@@ -85,14 +281,78 @@ h2{color:#fff;text-align:center;letter-spacing:10px;font-size:32px;font-weight:9
 <script>
 const ZALO_PHONE = "0355757211";
 
-// ===== KIỂM TRA KEY =====
+// Danh sách key hợp lệ — thêm key từ Generator vào đây
+// Format mới: { key, exp }  (exp = timestamp hết hạn, 0 = vĩnh viễn)
+const VALID_KEYS = [
+  { key: "SAMM2024", exp: 0 },                          // vĩnh viễn
+  { key: "VIP2024",  exp: Date.now() + 30*86400000 },   // 30 ngày kể từ giờ
+  { key: "PRO2024",  exp: Date.now() + 7*86400000 },    // 7 ngày
+  { key: "TEST2024", exp: Date.now() + 1*86400000 }     // 1 ngày
+];
+
+// Cấu hình hiển thị cho từng chức năng
+const CONFIGS = {
+  "MENU SAMM CRACK": {title:"MENU SAMM CRACK", rows:[
+    ["ĐỘ NHẠY","100%","hot"],["VÙNG AIM","180°",""],["KHOẢNG CÁCH","300M",""],
+    ["TỐC ĐỘ","FAST","warn"],["XUYÊN TƯỜNG","BẬT","hot"],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM BOT": {title:"AIM BOT", rows:[
+    ["ĐỘ NHẠY","95%","hot"],["VÙNG AIM","120°",""],["KHOẢNG CÁCH","250M",""],
+    ["TỐC ĐỘ","VERY FAST","warn"],["AUTO FIRE","BẬT","hot"],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM NECK": {title:"AIM NECK", rows:[
+    ["ĐỘ NHẠY","88%","hot"],["VÙNG AIM","90°",""],["KHOẢNG CÁCH","200M",""],
+    ["ĐIỂM AIM","CỔ","warn"],["SMOOTH","0.3",""],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM LOCK": {title:"AIM LOCK", rows:[
+    ["ĐỘ NHẠY","100%","hot"],["VÙNG AIM","360°",""],["KHOẢNG CÁCH","VÔ HẠN",""],
+    ["LOCK ĐẦU","BẬT","hot"],["XUYÊN TƯỜNG","BẬT","hot"],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM BODY": {title:"AIM BODY", rows:[
+    ["ĐỘ NHẠY","92%","hot"],["VÙNG AIM","110°",""],["KHOẢNG CÁCH","220M",""],
+    ["ĐIỂM AIM","NGỰC","warn"],["SMOOTH","0.5",""],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM MAGIC": {title:"AIM MAGIC", rows:[
+    ["ĐỘ NHẠY","99%","hot"],["VÙNG AIM","270°",""],["KHOẢNG CÁCH","500M",""],
+    ["MAGIC BULLET","BẬT","hot"],["TỐC ĐỘ","ULTRA","warn"],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM DRAG": {title:"AIM DRAG", rows:[
+    ["ĐỘ NHẠY","97%","hot"],["VÙNG AIM","150°",""],["KHOẢNG CÁCH","350M",""],
+    ["DRAG FORCE","BẬT","hot"],["SMOOTH","0.2",""],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "AIM CỔ": {title:"AIM CỔ", rows:[
+    ["ĐỘ NHẠY","90%","hot"],["VÙNG AIM","100°",""],["KHOẢNG CÁCH","180M",""],
+    ["ĐIỂM AIM","CỔ","warn"],["AUTO SCAN","BẬT","hot"],["ANTI-BAN","BẬT","hot"]
+  ]},
+  "ESP": {title:"ESP", rows:[
+    ["HIỆN MÁU","BẬT","hot"],["HIỆN TÊN","BẬT","hot"],["HIỆN KHOẢNG CÁCH","BẬT","hot"],
+    ["BOX ENEMY","BẬT",""],["MÀU","ĐỎ","warn"],["ANTI-BAN","BẬT","hot"]
+  ]}
+};
+
+// Lưu key đã dùng (không cho dùng lại)
+function getUsedKeys(){
+  return JSON.parse(localStorage.getItem('samm_used_keys') || '[]');
+}
+function markUsed(key){
+  const arr = getUsedKeys();
+  if(!arr.includes(key)){
+    arr.push(key);
+    localStorage.setItem('samm_used_keys', JSON.stringify(arr));
+  }
+}
+function isUsed(key){
+  return getUsedKeys().includes(key);
+}
+
+// Kiểm tra key
 function checkKey(){
   const k = document.getElementById('key').value.trim().toUpperCase();
   const msg = document.getElementById('msg');
+  msg.className = '';
+  msg.textContent = '';
 
-  // Lấy danh sách key đã tạo
-  const keys = JSON.parse(localStorage.getItem('samm_keys') || '[]');
-  const found = keys.find(item => item.key === k);
+  const found = VALID_KEYS.find(item => item.key === k);
 
   if(!found){
     msg.className = 'err';
@@ -101,7 +361,15 @@ function checkKey(){
     return;
   }
 
-  // Kiểm tra hạn dùng
+  // Kiểm tra key đã dùng chưa
+  if(isUsed(k)){
+    msg.className = 'err';
+    msg.textContent = '✗ KEY ĐÃ TỒN TẠI';
+    setTimeout(()=>{ msg.textContent=''; msg.className=''; }, 1800);
+    return;
+  }
+
+  // Kiểm tra hạn
   if(found.exp !== 0 && Date.now() > found.exp){
     msg.className = 'err';
     msg.textContent = '✗ KEY ĐÃ HẾT HẠN';
@@ -109,14 +377,39 @@ function checkKey(){
     return;
   }
 
-  // Hợp lệ
+  // Hợp lệ -> đánh dấu đã dùng, lưu phiên
+  markUsed(k);
   msg.className = 'ok';
   msg.textContent = '✓ KÍCH HOẠT THÀNH CÔNG';
+
   localStorage.setItem('samm_active', k);
+  localStorage.setItem('samm_active_exp', found.exp);
+
   setTimeout(()=>{
     document.getElementById('login').style.display = 'none';
     document.getElementById('menu').classList.add('show');
   }, 800);
+}
+
+// Đăng xuất
+function logout(){
+  localStorage.removeItem('samm_active');
+  localStorage.removeItem('samm_active_exp');
+  location.reload();
+}
+
+// Tự động kiểm tra hạn mỗi 5 giây
+function autoCheckExpire(){
+  const active = localStorage.getItem('samm_active');
+  const exp = parseInt(localStorage.getItem('samm_active_exp') || '0');
+  if(!active) return;
+  if(exp !== 0 && Date.now() > exp){
+    // Hết hạn -> đăng xuất
+    localStorage.removeItem('samm_active');
+    localStorage.removeItem('samm_active_exp');
+    alert('⚠️ KEY ĐÃ HẾT HẠN — TỰ ĐỘNG ĐĂNG XUẤT');
+    location.reload();
+  }
 }
 
 document.getElementById('key').addEventListener('keydown', e=>{
@@ -127,36 +420,64 @@ document.getElementById('ibBtn').onclick = ()=>{
   window.open('https://zalo.me/' + ZALO_PHONE, '_blank');
 };
 
-// Chỉ bật 1 chức năng
+// Bật 1 chức năng + hiện cấu hình
 const items = document.querySelectorAll('.r');
+const config = document.getElementById('config');
+const cfgTitle = document.getElementById('cfgTitle');
+const cfgRows = config.querySelectorAll('.cfg-row');
+
 items.forEach(item=>{
   item.onclick = ()=>{
     const isOn = item.classList.contains('on');
+    const name = item.dataset.n;
+
     items.forEach(i=>{
       i.classList.remove('on');
       i.querySelector('.badge').textContent = 'OFF';
     });
-    if(!isOn){
-      item.classList.add('on');
-      item.querySelector('.badge').textContent = 'ON';
+
+    if(isOn){
+      config.classList.remove('show');
+      return;
+    }
+
+    item.classList.add('on');
+    item.querySelector('.badge').textContent = 'ON';
+
+    const cfg = CONFIGS[name];
+    if(cfg){
+      cfgTitle.textContent = 'CẤU HÌNH ' + cfg.title;
+      cfgRows.forEach((row, i)=>{
+        const data = cfg.rows[i];
+        row.querySelector('.name').textContent = data[0];
+        const v = row.querySelector('.val');
+        v.textContent = data[1];
+        v.className = 'val ' + (data[2] || '');
+      });
+      config.classList.add('show');
     }
   };
 });
 
-// Tự động vào menu nếu đã kích hoạt
+// Tự động vào menu + kiểm tra hạn khi load
 window.addEventListener('load', ()=>{
+  autoCheckExpire();
   const saved = localStorage.getItem('samm_active');
+  const exp = parseInt(localStorage.getItem('samm_active_exp') || '0');
   if(saved){
-    const keys = JSON.parse(localStorage.getItem('samm_keys') || '[]');
-    const found = keys.find(i => i.key === saved);
-    if(found && (found.exp === 0 || Date.now() <= found.exp)){
-      document.getElementById('login').style.display = 'none';
-      document.getElementById('menu').classList.add('show');
-    } else {
+    if(exp !== 0 && Date.now() > exp){
+      // Đã hết hạn
       localStorage.removeItem('samm_active');
+      localStorage.removeItem('samm_active_exp');
+      return;
     }
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('menu').classList.add('show');
   }
 });
+
+// Chạy auto-check mỗi 5 giây
+setInterval(autoCheckExpire, 5000);
 </script>
 </body>
 </html>
