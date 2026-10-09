@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAMM CRACK</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:radial-gradient(circle at 50% 0%,#7a0000 0%,#3a0000 30%,#150000 60%,#000 100%);display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px;overflow:hidden}
+body:before{content:"";position:fixed;inset:0;background:linear-gradient(#ff003315 1px,transparent 1px) 0 0/50px 50px,linear-gradient(90deg,#ff003315 1px,transparent 1px) 0 0/50px 50px;animation:grid 5s linear infinite;pointer-events:none}
+@keyframes grid{to{background-position:50px 50px}}
+.box{width:440px;max-width:100%;padding:38px 34px;position:relative;z-index:2;background:linear-gradient(160deg,rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.03) 25%,transparent 50%),linear-gradient(160deg,#5a0000 0%,#2a0000 40%,#1a0000 70%,#3a0000 100%);border-radius:26px;box-shadow:0 0 0 2px #ff0033,0 0 35px #ff0033,0 0 80px #ff0033aa,inset 0 2px 25px rgba(255,255,255,0.25),inset 0 0 70px #ff003340;animation:pulse 2s ease-in-out infinite;overflow:hidden}
+.box:before{content:"";position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.25),transparent);transform:skewX(-20deg);animation:shine 4s ease-in-out infinite;pointer-events:none}
+@keyframes shine{0%{left:-100%}50%,100%{left:150%}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 2px #ff0033,0 0 35px #ff0033,0 0 80px #ff0033aa,inset 0 2px 25px rgba(255,255,255,0.25),inset 0 0 70px #ff003340}50%{box-shadow:0 0 0 2px #ff3366,0 0 50px #ff0033,0 0 110px #ff0033cc,inset 0 2px 30px rgba(255,255,255,0.35),inset 0 0 90px #ff003360}}
+h2{color:#fff;text-align:center;letter-spacing:10px;font-size:32px;font-weight:900;margin-bottom:6px;background:linear-gradient(180deg,#ffffff 0%,#ff3366 50%,#ff0033 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 14px #ff0033);animation:glow 1.2s ease-in-out infinite alternate}
+@keyframes glow{from{filter:drop-shadow(0 0 14px #ff0033)}to{filter:drop-shadow(0 0 25px #ff0033)}}
+.sub{color:#ff5566;text-align:center;font-size:11px;letter-spacing:7px;margin-bottom:22px;font-weight:700}
+.divider{height:2px;margin:20px 0;background:linear-gradient(90deg,transparent,#ff6688,#ff0033,#ff6688,transparent);box-shadow:0 0 14px #ff0033}
+.key-wrap input{width:100%;padding:18px 20px;font-size:15px;letter-spacing:2px;background:linear-gradient(180deg,#0a0000,#250000);border:2px solid #ff003366;border-radius:14px;color:#ff3366;text-align:center;font-weight:700;outline:none;transition:.3s;text-transform:uppercase;box-shadow:inset 0 3px 10px rgba(0,0,0,0.8)}
+.key-wrap input::placeholder{color:#ff003366;letter-spacing:4px;font-size:14px}
+.key-wrap input:focus{border-color:#ff3366;box-shadow:0 0 25px #ff0033,inset 0 0 22px #ff003344;color:#fff;text-shadow:0 0 12px #ff0033}
+.btn{width:100%;padding:18px;font-size:16px;font-weight:900;letter-spacing:6px;color:#fff;border:2px solid #ff8899;border-radius:14px;cursor:pointer;background:linear-gradient(180deg,rgba(255,255,255,0.5) 0%,transparent 45%),linear-gradient(180deg,#ff3366 0%,#ff0033 50%,#990020 100%);box-shadow:0 0 28px #ff0033,inset 0 2px 14px rgba(255,255,255,0.6);transition:.25s;margin-top:16px;text-shadow:0 0 12px rgba(255,255,255,0.8)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 40px #ff0033}
+.btn:active{transform:translateY(1px) scale(0.99)}
+#msg{text-align:center;font-size:13px;letter-spacing:3px;font-weight:800;margin-top:14px;height:18px}
+#msg.err{color:#ff0033;text-shadow:0 0 14px #ff0033;animation:shake .4s}
+#msg.ok{color:#00ff88;text-shadow:0 0 14px #00ff88}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.contact{text-align:center;margin-top:20px;font-size:12px;letter-spacing:3px;color:#ff5566;font-weight:800}
+.contact a{display:inline-block;margin-top:12px;padding:14px 34px;color:#00e0ff;text-decoration:none;font-weight:900;letter-spacing:5px;font-size:14px;border:2px solid #00e0ff;border-radius:12px;background:linear-gradient(180deg,rgba(0,224,255,0.3),rgba(0,180,220,0.1));box-shadow:0 0 18px #00e0ff88;transition:.3s;cursor:pointer;text-shadow:0 0 10px #00e0ff}
+.contact a:hover{background:#00e0ff;color:#001a22;transform:scale(1.06);text-shadow:none}
+#menu{display:none}
+#menu.show{display:block;animation:fadeIn .5s}
+@keyframes fadeIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.r{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;margin-bottom:12px;cursor:pointer;user-select:none;background:linear-gradient(180deg,rgba(255,255,255,0.15) 0%,transparent 40%),linear-gradient(180deg,#2a0000,#1a0000);border:1px solid #ff003366;border-radius:14px;color:#ff8888;font-size:15px;font-weight:800;letter-spacing:2px;transition:.3s;position:relative;overflow:hidden}
+.r:before{content:"";position:absolute;left:-100%;top:0;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);transition:.6s}
+.r:hover:before{left:100%}
+.r:hover{border-color:#ff3366;box-shadow:0 0 20px #ff003388}
+.r.on{color:#fff;border-color:#ff3366;background:linear-gradient(180deg,rgba(255,255,255,0.35),transparent),linear-gradient(180deg,#ff0033,#7a0018);text-shadow:0 0 14px #fff;box-shadow:0 0 28px #ff0033}
+.dot{width:13px;height:13px;border-radius:50%;background:#ff003344;border:1px solid #ff003366;margin-right:12px;transition:.3s;flex-shrink:0}
+.r.on .dot{background:#00ff88;box-shadow:0 0 14px #00ff88;border-color:#fff}
+.r span{flex:1}
+.badge{font-size:11px;padding:5px 11px;border-radius:12px;background:#ff003322;border:1px solid #ff003355;color:#ff0033aa;letter-spacing:1.5px;transition:.3s;font-weight:900}
+.r.on .badge{background:linear-gradient(180deg,#fff,#ff0033);border-color:#fff;color:#fff;box-shadow:0 0 18px #ff0033}
+</style>
+</head>
+<body>
+<div class="box">
+
+  <div id="login">
+    <h2>SAMM CRACK</h2>
+    <p class="sub">KEY ACTIVATION</p>
+    <div class="divider"></div>
+
+    <div class="key-wrap">
+      <input id="key" placeholder="DÁN KEY VÀO ĐÂY..." maxlength="30">
+    </div>
+
+    <button class="btn" onclick="checkKey()">KÍCH HOẠT</button>
+    <div id="msg"></div>
+
+    <div class="divider"></div>
+
+    <div class="contact">
+      CHƯA CÓ KEY?<br>
+      <a id="ibBtn">IB SAMM</a>
+    </div>
+  </div>
+
+  <div id="menu">
+    <h2>SAMM CRACK</h2>
+    <p class="sub">MENU CHỨC NĂNG</p>
+    <div class="divider"></div>
+    <div class="r"><div class="dot"></div><span>MENU SAMM CRACK</span><div class="badge">OFF</div></div>
+    <div class="r"><div class="dot"></div><span>AIM BOT</span><div class="badge">OFF</div></div>
+    <div class="r"><div class="dot"></div><span>AIM NECK</span><div class="badge">OFF</div></div>
+    <div class="r"><div class="dot"></div><span>AIM LOCK</span><div class="badge">OFF</div></div>
+    <div class="r"><div class="dot"></div><span>ESP</span><div class="badge">OFF</div></div>
+    <div class="divider"></div>
+  </div>
+
+</div>
+
+<script>
+const ZALO_PHONE = "0355757211";
+
+// ===== KIỂM TRA KEY =====
+function checkKey(){
+  const k = document.getElementById('key').value.trim().toUpperCase();
+  const msg = document.getElementById('msg');
+
+  // Lấy danh sách key đã tạo
+  const keys = JSON.parse(localStorage.getItem('samm_keys') || '[]');
+  const found = keys.find(item => item.key === k);
+
+  if(!found){
+    msg.className = 'err';
+    msg.textContent = '✗ KEY KHÔNG HỢP LỆ';
+    setTimeout(()=>{ msg.textContent=''; msg.className=''; }, 1800);
+    return;
+  }
+
+  // Kiểm tra hạn dùng
+  if(found.exp !== 0 && Date.now() > found.exp){
+    msg.className = 'err';
+    msg.textContent = '✗ KEY ĐÃ HẾT HẠN';
+    setTimeout(()=>{ msg.textContent=''; msg.className=''; }, 1800);
+    return;
+  }
+
+  // Hợp lệ
+  msg.className = 'ok';
+  msg.textContent = '✓ KÍCH HOẠT THÀNH CÔNG';
+  localStorage.setItem('samm_active', k);
+  setTimeout(()=>{
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('menu').classList.add('show');
+  }, 800);
+}
+
+document.getElementById('key').addEventListener('keydown', e=>{
+  if(e.key === 'Enter') checkKey();
+});
+
+document.getElementById('ibBtn').onclick = ()=>{
+  window.open('https://zalo.me/' + ZALO_PHONE, '_blank');
+};
+
+// Chỉ bật 1 chức năng
+const items = document.querySelectorAll('.r');
+items.forEach(item=>{
+  item.onclick = ()=>{
+    const isOn = item.classList.contains('on');
+    items.forEach(i=>{
+      i.classList.remove('on');
+      i.querySelector('.badge').textContent = 'OFF';
+    });
+    if(!isOn){
+      item.classList.add('on');
+      item.querySelector('.badge').textContent = 'ON';
+    }
+  };
+});
+
+// Tự động vào menu nếu đã kích hoạt
+window.addEventListener('load', ()=>{
+  const saved = localStorage.getItem('samm_active');
+  if(saved){
+    const keys = JSON.parse(localStorage.getItem('samm_keys') || '[]');
+    const found = keys.find(i => i.key === saved);
+    if(found && (found.exp === 0 || Date.now() <= found.exp)){
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('menu').classList.add('show');
+    } else {
+      localStorage.removeItem('samm_active');
+    }
+  }
+});
+</script>
+</body>
+</html>
